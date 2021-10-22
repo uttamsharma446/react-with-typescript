@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  flex-direction: column;
+display: flex;
+align-items: center;
 }
 
 .App-logo {
@@ -27,7 +30,66 @@
 .App-link {
   color: #61dafb;
 }
+ul{
+  width: 50%;
+  padding:20px;
+}
 
+.list{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border:1px solid #7777;
+  border-radius: 10px;
+  margin: 10px;
+}
+.list-img{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.list-img h1{
+  font-size: 1rem;
+}
+.list-img img{
+  border-radius: 50%;
+  width:50px;
+}
+.list>*{
+  flex: 1;
+}
+.addlist-input{
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 10px;
+  font-size: 1rem;
+
+}
+.addlist-textarea{
+  display: block;
+ 
+  padding:7px 10px;
+  height: 38px;
+  margin: 10px 0;
+  width: 100%;
+  margin-right: auto;
+  font-size: 1rem;
+}
+.addtolist{
+  width: 40%;
+}
+.addlist-btn{
+ 
+  font-size: 1rem;
+  padding: 10px 10px;
+  cursor: pointer;
+  
+  border: none;
+   margin: 10px 0;
+  background-color: #113CFC;
+  color: #fff;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
